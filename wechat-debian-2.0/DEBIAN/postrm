@@ -1,0 +1,14 @@
+if [ "$1" = 0 ]; then
+  theuser=$(users | awk '{print $1;}')
+  rm -rf /home/*/.config/微信
+  echo "移除缓存数据"
+  if [ ! -d "/home/$theuser/桌面" ]; then
+     des="/home/$theuser/Desktop"
+  else
+     des="/home/$theuser/桌面"
+  fi
+
+  rm "$des/wechat.desktop"
+  echo "移除桌面快捷方式"
+fi
+

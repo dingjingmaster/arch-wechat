@@ -1,0 +1,12 @@
+Package: wechat
+Version: 2.0.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Depends: libgtk2.0-0, libnotify4, libnss3, libxss1, libxtst6, xdg-utils, libgconf-2-4 | libgconf2-4, kde-cli-tools | kde-runtime | trash-cli | libglib2.0-bin | gvfs-bin
+Recommends: pulseaudio | libasound2
+Suggests: gir1.2-gnomekeyring-1.0, libgnome-keyring0, lsb-release
+Installed-Size: 122744
+Maintainer: arminchen
+Description: 微信
+ 微信

@@ -1,0 +1,12 @@
+theuser=$(users | awk '{print $1;}')
+
+if [ ! -d "/home/$theuser/桌面" ]; then
+   des="/home/$theuser/Desktop"
+else
+   des="/home/$theuser/桌面"
+fi
+
+echo "创建桌面快捷方式"
+cp /usr/share/applications/wechat.desktop "$des"
+chmod a+x "$des/wechat.desktop"
+chown $theuser "$des/wechat.desktop"
